@@ -3,8 +3,12 @@ package hw1;
 public class question1 {
 	public static void main(String[] args) {
 		int num1 = 6, num2 = 12;
-		System.out.println(num1 + num2);
-		System.out.println(num1 * num2);
+		int num3 = num1 + num2;
+		int num4 = num1 * num2;
+//		System.out.println(num1 + num2);
+//		System.out.println(num1 * num2);
+		System.out.println("和為" + num3);
+		System.out.println("積為" + num4);
 		System.out.println("===============");
 
 //	  Quention 2
@@ -46,10 +50,30 @@ public class question1 {
 //     	System.out.println(area);
      	System.out.println("半徑為5的圓面積為" + area);
      	System.out.println("半徑為5的圓周長為" + l1);
+     	System.out.println("===============");
 	
 //	   Quention 5
-/*	複利的計算公式是：S = P(I + i)n。
+/*	複利的計算公式是
+    本利和 = 本金 × (1 + 年利率)^期間
     符號I代表利息，P代表本金，n代表期數，i代表利率，S代表本利和 */
+		int p = 1500000;   //本金
+		int n = 10;   //期數
+		double i = 0.02;   //利率
+		double ii = p * i * n ;  //利息
+		double money1 = p * (Math.pow(1 + i,n));
+     	System.out.printf("本金加上利息為%.2f元",money1);
+     	
+     	System.out.println("===============");
+     	
+// 	   Quention 6
+     	// 5 + 5為整數相加
+     	System.out.println(5+5);  
+     	// 第一個5為整數,第二個'5'為字元,Unicode編碼=53 5 + 53 = 58
+     	System.out.println(5+'5');
+     	// 第一個5為整數,第二個"5"為字串，因此 5會直接串接文字5
+     	System.out.println(5+"5");
+		
+     	
 		
 
 
