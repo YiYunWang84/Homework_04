@@ -43,8 +43,13 @@ public class q_02 {
 		
 //        question 5  阿文很熱衷大樂透 (1 ～ 49)，但他不喜歡有4的數字，不論是個位數或是十位數。請設計一隻程式，
 //			      	  輸出結果為阿文可以選擇的數字有哪些？總共有幾個？	       	
-//		int lot = 0;
-//		for ()
+		
+		for (int i = 1; i <= 49; i++ ) {
+			if(a == 4) {
+				
+			}
+			else 
+		}
 		
 		
 		
@@ -65,10 +70,11 @@ public class q_02 {
 			System.out.print(g1+"\t");
 		    }
 			System.out.print("\n");  //分行
+			
 	    }
 		
 		
-		
+		System.out.println("===============");
 //        question 7  請設計一隻Java程式，輸出結果為以下：
 //			      	  A
 //			      	  BB
@@ -76,15 +82,29 @@ public class q_02 {
 //			      	  DDDD
 //			      	  EEEEE
 //			      	  FFFFFF
+//		char[] charArr = {'A', 'B', 'C', 'D', 'E', 'F'};
+//		for(int i=0; i<6; i++) {
+//			
+//			char nowChar = charArr[i];
+//			
+//			for (int j=0; j <= i; j++) {
+//				System.out.print(nowChar);
+//			}
+//			
+//			if(i!=5) {
+//				System.out.println();
 		
-		for (int h1 = 1 ; h1 <= 6;  h1++) {
-			for(int k1 = 0040; k1 <= h1;  k1++) {
-				System.out.print((chr) k1 + '\n');
+		char[] ne1 = {'A', 'B', 'C', 'D', 'E', 'F'};
+		for(int i=0; i<=5; i++) {
+		    char ne2 = ne1[i];
+		    
+		    for (int j=0; j<=i; j++) {
+		    	System.out.print(ne2);
 		    }
-			
-			
-			System.out.print("\n");  //分行
+		    System.out.println();
+		}
+//		System.out.println();
+//		String test = String.format("%05d", 0).replace('0', 'A');
+//		System.out.print(test);
 	    }
-	
 	}
-}
